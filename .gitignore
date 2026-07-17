@@ -1,0 +1,9 @@
+*
+
+!.gitignore
+
+!Journals/
+!PythonProjects
+
+!Journals/**
+!PythonProjects/**
