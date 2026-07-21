@@ -11,7 +11,7 @@ def dft(x):
 
         # Sigma
         for n in range(len(x)):
-            # Perhitungan euler
+            # Calculate Euler
 
             angle = 2 * math.pi * k * n / len(x) # 2pi*k*n/N
             realNum += x[n] * math.cos(angle) # Xn * e
@@ -33,5 +33,5 @@ def fft(x):
         return np.concatenate([xEven + factor[:N / 2] * xOdd,
                                xEven + factor[N / 2:] * xOdd])
 
-input = [1, 2, 3, 4]
+input = list(range(1, 37))
 print(fft(input))
